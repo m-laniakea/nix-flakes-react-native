@@ -5,9 +5,16 @@ Want to simplify your android dev environment setup? *A little bit of flakes is 
 Make sure you have `nix` with [nix flakes enabled](https://nixos.wiki/wiki/Flakes#Enable_flakes).
 ```bash
 nix develop                  # set up the dev environment. First time may take a while
+```
 
-cd <project-dir>             # you can use `reactNativeExample` for now
-npm install                  # download required node_modules
+#### Creating a new project:
+```bash
+npx react-native init <newProjectName>
+```
+> There's an issue with `init` in the pinned `react-native-cli`, so init via `npx` for now
+
+```bash
+cd <project-dir>
 react-native start           # allows you to run the app on your (emulated) device
 ```
 
@@ -27,13 +34,6 @@ cd android
 #### iOS build:
 ```bash
 # TODO
-```
-
-#### Creating a new project:
-```bash
-# There's an issue with `init` in the pinned `react-native-cli`, so init via `npx` for now
-npx react-native init <newProjectName> 
-# Then run or build as above
 ```
 
 ### TODO:
