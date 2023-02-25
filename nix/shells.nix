@@ -1,10 +1,9 @@
 { pkgs
-, system
 , env-android 
 }:
 
 {
-  devShells.${system}.default = pkgs.mkShell rec 
+  devShells.default = pkgs.mkShell
   {
     packages = 
     [ 

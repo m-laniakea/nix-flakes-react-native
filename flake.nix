@@ -39,7 +39,6 @@
         shells = import ./nix/shells.nix 
         { inherit 
           pkgs
-          system
           env-android 
         ;
         };
@@ -51,7 +50,7 @@
         packages.android-debug-gradle = builds.android-debug-gradle; 
         packages.android-debug-react  = builds.android-debug-react; 
 
-        devShells.default = shells.devShells.${system}.default;
+        devShells.default = shells.devShells.default;
       }
     );
 }
